@@ -1,0 +1,163 @@
+/* Main style components for the group project */
+
+/* variables */
+:root {
+  --min-width: 10%;
+  --c-red: #dc3545;
+  --c-dark: #343a40;
+  --c-green: #28a745;
+  --c-muted: #6c757d;
+  --c-white: #fff;
+  --c-light: #f8f9fa;
+  --c-blue: #007bff;
+  --c-yellow: #ffc107;
+}
+
+/* conatainers */
+
+.container {
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.container-full {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* layout design */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.column {
+  flex: 1 0 0%;
+}
+
+/* width classes - total width is divided equally and each individual width will be 10% */
+
+.w-1 {
+  width: calc(var(--min-width) * 1);
+}
+
+.w-2 {
+  width: calc(var(--min-width) * 2);
+}
+
+.w-3 {
+  width: calc(var(--min-width) * 3);
+}
+
+.w-4 {
+  width: calc(var(--min-width) * 4);
+}
+
+.w-5 {
+  width: calc(var(--min-width) * 5);
+}
+
+.w-6 {
+  width: calc(var(--min-width) * 6);
+}
+
+.w-7 {
+  width: calc(var(--min-width) * 7);
+}
+.w-8 {
+  width: calc(var(--min-width) * 8);
+}
+.w-9 {
+  width: calc(var(--min-width) * 9);
+}
+.w-full {
+  width: calc(var(--min-width) * 10);
+}
+
+/* Colors  */
+/* text colors */
+.txt-red {
+  color: var(--c-red);
+}
+
+.txr-dark {
+  color: var(--c-dark);
+}
+
+.txt-green {
+  color: var(--c-green);
+}
+.txt-muted {
+  color: var(--c-muted);
+}
+.txt-white {
+  color: var(--c-white);
+}
+.txt-light {
+  color: var(--c-light);
+}
+.txt-blue {
+  color: var(--c-blue);
+}
+.txt-yellow {
+  color: var(--c-yellow);
+}
+
+/* background colors */
+.bg-red {
+  background-color: var(--c-red);
+}
+
+.bg-dark {
+  background-color: var(--c-dark);
+}
+
+.bg-green {
+  background-color: var(--c-green);
+}
+.bg-muted {
+  background-color: var(--c-muted);
+}
+.bg-white {
+  background-color: var(--c-white);
+}
+.bg-light {
+  background-color: var(--c-light);
+}
+.bg-blue {
+  background-color: var(--c-blue);
+}
+.bg-yellow {
+  background-color: var(--c-yellow);
+}
+
+/* text relaed style */
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-capital {
+  text-transform: capitalize;
+}
+
+.txt-lower {
+  text-transform: lowercase;
+}
+
+.txt-upper {
+  text-transform: uppercase;
+}
