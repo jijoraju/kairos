@@ -13,14 +13,26 @@
   --c-yellow: #ffc107;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
 /* conatainers */
 
 .container {
   width: 100%;
-  margin-left: 30px;
-  margin-right: 30px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .container-full {
@@ -48,6 +60,34 @@
   flex: 1 0 0%;
 }
 
+.flex {
+  display: flex !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.navbar .nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar .nav-links .link-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-brand {
+  text-decoration: none;
+  white-space: nowrap;
+}
+
 /* width classes - total width is divided equally and each individual width will be 10% */
 
 .w-1 {
@@ -59,7 +99,7 @@
 }
 
 .w-3 {
-  width: calc(var(--min-width) * 3);
+  width: 30%;
 }
 
 .w-4 {
@@ -75,7 +115,7 @@
 }
 
 .w-7 {
-  width: calc(var(--min-width) * 7);
+  width: 70%;
 }
 .w-8 {
   width: calc(var(--min-width) * 8);
@@ -160,4 +200,35 @@
 
 .txt-upper {
   text-transform: uppercase;
+}
+
+/* cards */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.card .row > * {
+  padding: 0;
+}
+
+.card .card-body {
+  padding: 30px;
+  height: 100%;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.img-flexible {
+  max-width: 100%;
+  height: auto;
 }
