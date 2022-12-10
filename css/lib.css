@@ -83,9 +83,19 @@ body {
   padding-right: 10px;
 }
 
+.navbar .nav-links .link-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav-brand {
   text-decoration: none;
   white-space: nowrap;
+}
+
+.nav-brand a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* width classes - total width is divided equally and each individual width will be 10% */
