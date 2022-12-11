@@ -137,6 +137,43 @@ body {
   width: calc(var(--min-width) * 10);
 }
 
+.h-1 {
+  height: calc(var(--min-width) * 1);
+}
+
+.h-2 {
+  height: calc(var(--min-width) * 2);
+}
+
+.h-3 {
+  height: calc(var(--min-width) * 3);
+}
+
+.h-4 {
+  height: calc(var(--min-width) * 4);
+}
+
+.h-5 {
+  height: calc(var(--min-width) * 5);
+}
+
+.h-6 {
+  height: calc(var(--min-width) * 6);
+}
+
+.h-7 {
+  height: calc(var(--min-width) * 7);
+}
+.h-8 {
+  height: calc(var(--min-width) * 8);
+}
+.h-9 {
+  height: calc(var(--min-width) * 9);
+}
+.h-full {
+  height: calc(var(--min-width) * 10);
+}
+
 /* Colors  */
 /* text colors */
 .txt-red {
