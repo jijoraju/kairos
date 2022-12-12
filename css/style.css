@@ -284,14 +284,74 @@ footer .social-media a {
   cursor: pointer;
 }
 
-.home-banner {
+.banner {
   height: 500px;
 }
 
-.home-banner img {
+.banner img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.banner.contact img {
+  position: relative;
+}
+
+.banner.contact .banner-text {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+}
+
+.banner.contact .banner-text h2 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.banner.contact .banner-text .form-input {
+  border-radius: 2rem;
+  height: 60px;
+  padding: 0.875rem 2.5rem;
+  font-size: 20px;
+  border-color: #fff;
+  margin-top: 10px;
+}
+.banner.contact .banner-text .form-input:focus {
+  background-color: #fff;
+  border-color: #fff;
+  outline: 0;
+}
+
+#contact-form {
+  margin-top: 20px;
+}
+
+#contact-form form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#contact-form .section-subhead {
+  width: 330px;
+}
+
+#contact-form .row:has(.section-subhead) {
+  justify-content: center;
+}
+
+#contact-form form .btn.btn-transperant {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+  width: 100%;
+}
+
+#contact-form form .btn.btn-transperant:hover {
+  background-color: var(--c-white);
 }
 
 @media only screen and (max-width: 1024px) {
